@@ -1,0 +1,83 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx702b4c5b82687deb",
+	"projectname": "CurriculumVitae",
+	"libVersion": "2.10.3",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "基本资料",
+					"pathName": "pages/basicsituation/basicsituation",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "技能",
+					"pathName": "pages/skill/skill",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "工作经历",
+					"pathName": "pages/experience/experience",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "联系我",
+					"pathName": "pages/contact/contact",
+					"scene": null
+				}
+			]
+		}
+	}
+}

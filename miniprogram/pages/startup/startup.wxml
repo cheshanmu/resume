@@ -1,0 +1,6 @@
+<!--pages/startup/startup.wxml-->
+<view class="container">
+   <navigator class="nav" open-type="switchTab" url="/pages/index/index">
+       <text>查看简历</text>
+    </navigator>
+</view>

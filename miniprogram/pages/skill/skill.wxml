@@ -1,0 +1,96 @@
+<!-- pages/skill/skill.wxml -->
+<view class='skill'>
+    <view class='logo'>
+        <image src="http://q7jwsdbjc.bkt.clouddn.com/upload/20200330/172244333d09b7.jpg" mode="aspectFill"></image>
+    </view>
+    <van-tabs active="a" line-width="50" swipeable="true" color="#1aad19">
+        <van-tab title="能量值" name="a">
+            <view>
+                <view style="background-color:#fff;">
+                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">编程语言</van-divider>
+                </view>
+                <view class='header'>
+                    <view class='h-div' wx:for="{{skills.language}}" wx:index="index" wx:item="item" wx:key="index">
+                        <text>{{item.name}}</text>
+                        <view class='h-box'>
+                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
+                        </view>
+                    </view>
+                </view>   
+            </view>
+            <view>
+                <view style="background-color:#fff;">
+                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">框架</van-divider>
+                </view>
+                <view class='header'>
+                    <view class='h-div' wx:for="{{skills.framework}}" wx:index="index" wx:item="item" wx:key="index">
+                        <text>{{item.name}}</text>
+                        <view class='h-box'>
+                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
+                        </view>
+                    </view>
+                </view>   
+            </view>
+              <view>
+                <view style="background-color:#fff;">
+                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">微信</van-divider>
+                </view>
+                <view class='header'>
+                    <view class='h-div' wx:for="{{skills.weixin}}" wx:index="index" wx:item="item" wx:key="index">
+                        <text>{{item.name}}</text>
+                        <view class='h-box'>
+                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
+                        </view>
+                    </view>
+                </view>   
+            </view>
+            <view>
+                <view style="background-color:#fff;">
+                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">平台工具</van-divider>
+                </view>
+                <view class='header'>
+                    <view class='h-div' wx:for="{{skills.tools}}" wx:index="index" wx:item="item" wx:key="index">
+                        <text>{{item.name}}</text>
+                        <view class='h-box'>
+                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
+                        </view>
+                    </view>
+                </view>   
+            </view>
+        </van-tab>
+        <van-tab title="描述" name="b" >
+            <view class="description">
+                <text class="description-text">
+                    熟悉Java基础，面向对象，IO流，集合，反射，多线程等;
+                </text>
+                <text class="description-text">
+                    熟悉使用Html、CSS3、JavaScript、JQuery等前端语言；
+                </text>
+                <text class="description-text">
+                    熟悉使用SQL结构化查询语言；
+                </text>
+                <text class="description-text">
+                    熟悉Spring、Spring MVC、Spring Boot、Mybatis等主流框架；
+                </text>
+                <text class="description-text">
+                    熟悉使用IntelliJ IDEA/Eclipse等IDE进行项目开发；
+                </text>
+                <text class="description-text">
+                    熟悉使用MySQL、Oracle数据库；
+                </text>
+                <text class="description-text">
+                    掌握Tomcat容器、Maven构建、SVN、Git的版本管理；
+                </text>
+                <text class="description-text">
+                    了解Linux基础、安装、发布；
+                </text>
+                <text class="description-text">
+                    熟悉微信小程序开发；
+                </text>
+                <text class="description-text">
+                    了解C、Python语言基础。
+                </text>
+            </view>
+        </van-tab>
+    </van-tabs>
+</view>

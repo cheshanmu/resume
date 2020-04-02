@@ -1,0 +1,11 @@
+{
+  "component": true,
+  "usingComponents": {
+    "van-tab": "/@vant/weapp/tab/index",
+    "van-tabs": "/@vant/weapp/tabs/index",
+    "van-tag": "/@vant/weapp/tag/index",
+    "van-icon": "/@vant/weapp/icon/index",
+    "van-overlay": "/@vant/weapp/overlay/index"
+  },
+  "navigationBarTitleText": "工作经历"
+}

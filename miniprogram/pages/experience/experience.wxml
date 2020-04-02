@@ -1,0 +1,37 @@
+<view class='box_container'>
+    <view class="box"
+    wx:for="{{project.info}}"
+    wx:key="id"
+    data-index="{{item.index}}"
+    data-title="{{item.title}}"
+    bindtap="showDetail">
+        <view class='box_bottom'>
+            <view>{{item.title}}</view>
+        </view>
+        <view class='box_image' style='background-image:url("{{item.image}}")'></view>
+        <view class='box_topic'>
+            <van-icon name="underway-o" />
+            <view class="time">{{item.time}}</view>
+            <van-tag round plain color="#f2826a"
+                wx:for="{{item.tags}}"
+                wx:key="index"
+                wx:for-item="tag">{{tag}}</van-tag>
+        </view>
+    </view>
+    <van-overlay show="{{ showDetail }}" bind:click="show">
+        <view class="wrapper">
+            <view class="block" catchtap="show">
+                <view class="overlay-title">
+                    <text class="">
+                        {{title.title}}
+                    </text>
+                </view>
+                <view class="overlay-content">
+                    <text decode="{{true}}">
+                    {{detail}}
+                    </text>
+                </view>  
+            </view>
+        </view>
+    </van-overlay>
+</view>

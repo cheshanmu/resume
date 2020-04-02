@@ -1,0 +1,28 @@
+/* pages/startup/startup.wxss */
+page {
+  height: 100%;
+}
+.container {
+  height: 100%;
+  width: 750rpx;
+  background: url('http://q7jwsdbjc.bkt.clouddn.com/upload/20200402/15470611701b4a.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: top;
+}
+.container .nav {
+  position: fixed;
+  bottom: 130rpx;
+  right: 60rpx;
+  width: 200rpx;
+  height: 70rpx;
+  background: rgba(240, 240, 240, 0.3);
+  border-radius: 10rpx;
+  color: #f5f5f5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

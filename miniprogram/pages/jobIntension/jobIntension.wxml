@@ -1,0 +1,54 @@
+<!--pages/experience/experience.wxml-->
+<view class='experience'>
+  <view class='header'>
+    <swiper interval='5000' duration='1000' autoplay='true'>
+      <swiper-item>
+        <image src="../../utils/images/swiper1.jpg">
+        </image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../utils/images/swiper2.jpg">
+        </image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../utils/images/swiper3.jpg">
+        </image>
+      </swiper-item>
+    </swiper>
+    <!-- <image src="../../utils/images/swiper1.jpg"></image> -->
+  </view>
+
+  <view class='main'>
+    <view class='m-box'>
+      <view class='m-view'>
+        <view class='view-text'>
+        
+          <view>2004年9月至2010年6月XXXXXX小学。</view>
+        
+        </view>
+      </view>
+
+      <view class='m-view'>
+        <view class='view-text'>
+        
+          <view>2010年9月至2013年6月就读于XXXXXX中学。</view>
+        
+        </view>
+      </view>
+
+      <view class='m-view'>
+        <view class='view-text'>
+        
+          <view>2013年9月至2016年6月就读于XXXXXXXXX中学。</view>
+        
+        </view>
+      </view>
+      <view class='m-view'>
+        <view class='view-text'>
+        
+          <view>20016年9月至今就读于XXXXXXXXX大学。</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/startup/startup",
+    "pages/index/index",
+    "pages/skill/skill",
+    "pages/jobIntension/jobIntension",
+    "pages/contact/contact",
+    "pages/experience/experience"
+  ],
+  "window": {
+    "backgroundColor": "#f7f8fa",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f7f8fa",
+    "navigationBarTitleText": "我的简历",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#4d4d4d",
+    "selectedColor": "#1aad19",
+    "backgroundColor": "#f7f8fa",
+    "position": "bottom",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "基本信息",
+        "iconPath": "/images/basicInfo.png",
+        "selectedIconPath": "/images/basicInfo_selected.png"
+      },
+      {
+        "pagePath": "pages/skill/skill",
+        "text": "职业技能",
+        "iconPath": "/images/skills.png",
+        "selectedIconPath": "/images/skills_selected.png"
+      },
+      {
+        "pagePath": "pages/experience/experience",
+        "text": "工作经历",
+        "iconPath": "/images/experience.png",
+        "selectedIconPath": "/images/experience_selected.png"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "text": "联系我",
+        "iconPath": "/images/contact.png",
+        "selectedIconPath": "/images/contact_selected.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}
