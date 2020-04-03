@@ -4,7 +4,7 @@
         <image src="http://q7jwsdbjc.bkt.clouddn.com/upload/20200330/172244333d09b7.jpg" mode="aspectFill"></image>
     </view>
     <van-tabs active="a" line-width="50" swipeable="true" color="#1aad19">
-        <van-tab title="能量值" name="a">
+        <van-tab title="赋值" name="a">
             <view>
                 <view style="background-color:#fff;">
                     <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">编程语言</van-divider>

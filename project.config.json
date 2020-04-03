@@ -1,6 +1,5 @@
 {
 	"miniprogramRoot": "miniprogram/",
-	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": true,
 		"es6": true,
@@ -23,7 +22,7 @@
 		}
 	},
 	"appid": "wx702b4c5b82687deb",
-	"projectname": "CurriculumVitae",
+	"projectname": "Resume",
 	"libVersion": "2.10.3",
 	"simulatorType": "wechat",
 	"simulatorPluginLibVersion": {},
@@ -51,15 +50,8 @@
 			"current": -1,
 			"list": [
 				{
-					"id": -1,
-					"name": "基本资料",
-					"pathName": "pages/basicsituation/basicsituation",
-					"query": "",
-					"scene": null
-				},
-				{
-					"id": -1,
-					"name": "技能",
+					"id": 0,
+					"name": "职业技能",
 					"pathName": "pages/skill/skill",
 					"query": "",
 					"scene": null
@@ -75,6 +67,7 @@
 					"id": -1,
 					"name": "联系我",
 					"pathName": "pages/contact/contact",
+					"query": "",
 					"scene": null
 				}
 			]

@@ -3,7 +3,6 @@
     "pages/startup/startup",
     "pages/index/index",
     "pages/skill/skill",
-    "pages/jobIntension/jobIntension",
     "pages/contact/contact",
     "pages/experience/experience"
   ],
