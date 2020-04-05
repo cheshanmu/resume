@@ -5,89 +5,34 @@
     </view>
     <van-tabs active="a" line-width="50" swipeable="true" color="#1aad19">
         <van-tab title="赋值" name="a">
-            <view>
+            <view wx:for="{{skills}}" wx:key="desc" wx:for-item="s">
                 <view style="background-color:#fff;">
-                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">编程语言</van-divider>
+                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">
+                        {{s.desc}}
+                    </van-divider>
                 </view>
-                <view class='header'>
-                    <view class='h-div' wx:for="{{skills.language}}" wx:index="index" wx:item="item" wx:key="index">
-                        <text>{{item.name}}</text>
+                <view class='header' wx:for="{{s.skills}}" wx:key="name" wx:for-item="values">
+                    <view class='h-div'>
+                        <text>{{values.name}}</text>
                         <view class='h-box'>
-                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
+                            <progress percent="{{values.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{values.color}}' />
                         </view>
                     </view>
-                </view>   
-            </view>
-            <view>
-                <view style="background-color:#fff;">
-                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">框架</van-divider>
                 </view>
-                <view class='header'>
-                    <view class='h-div' wx:for="{{skills.framework}}" wx:index="index" wx:item="item" wx:key="index">
-                        <text>{{item.name}}</text>
-                        <view class='h-box'>
-                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
-                        </view>
-                    </view>
-                </view>   
-            </view>
-              <view>
-                <view style="background-color:#fff;">
-                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">微信</van-divider>
-                </view>
-                <view class='header'>
-                    <view class='h-div' wx:for="{{skills.weixin}}" wx:index="index" wx:item="item" wx:key="index">
-                        <text>{{item.name}}</text>
-                        <view class='h-box'>
-                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
-                        </view>
-                    </view>
-                </view>   
-            </view>
-            <view>
-                <view style="background-color:#fff;">
-                    <van-divider contentPosition="left" fontSize="16" textColor="#4d4d4d" customStyle="background-color:#fff;">平台工具</van-divider>
-                </view>
-                <view class='header'>
-                    <view class='h-div' wx:for="{{skills.tools}}" wx:index="index" wx:item="item" wx:key="index">
-                        <text>{{item.name}}</text>
-                        <view class='h-box'>
-                            <progress percent="{{item.num}}" font-size="12" stroke-width="4" border-radius="4" active activeColor='{{item.color}}' />
-                        </view>
-                    </view>
-                </view>   
             </view>
         </van-tab>
-        <van-tab title="描述" name="b" >
+        <van-tab title="描述" name="b">
             <view class="description">
                 <text class="description-text">
-                    熟悉Java基础，面向对象，IO流，集合，反射，多线程等;
-                </text>
-                <text class="description-text">
-                    熟悉使用Html、CSS3、JavaScript、JQuery等前端语言；
-                </text>
-                <text class="description-text">
-                    熟悉使用SQL结构化查询语言；
-                </text>
-                <text class="description-text">
-                    熟悉Spring、Spring MVC、Spring Boot、Mybatis等主流框架；
-                </text>
-                <text class="description-text">
-                    熟悉使用IntelliJ IDEA/Eclipse等IDE进行项目开发；
-                </text>
-                <text class="description-text">
-                    熟悉使用MySQL、Oracle数据库；
-                </text>
-                <text class="description-text">
-                    掌握Tomcat容器、Maven构建、SVN、Git的版本管理；
-                </text>
-                <text class="description-text">
-                    了解Linux基础、安装、发布；
-                </text>
-                <text class="description-text">
-                    熟悉微信小程序开发；
-                </text>
-                <text class="description-text">
+                    熟练Java语言基础，了解JVM性能调优、GC垃圾回收机制；
+                    熟练使用Html、CSS3、JavaScript、JQuery等前端语言；
+                    熟练使用SQL结构化查询语言；
+                    熟练Spring、Spring MVC、Spring Boot、Mybatis等主流框架；
+                    熟练使用IntelliJ IDEA/Eclipse等IDE；
+                    熟练使用MySQL、Oracle数据库，了解数据库优化；
+                    掌握Tomcat容器并优化、Maven构建、SVN、Git的版本管理；
+                    了解Linux基础、安装、发布，分布式集群；
+                    了解微信小程序开发；
                     了解C、Python语言基础。
                 </text>
             </view>

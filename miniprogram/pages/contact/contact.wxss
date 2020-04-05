@@ -34,6 +34,7 @@ page {
   align-self: center;
   margin: 20rpx 0rpx;
   font-size: 48rpx;
+  color: #ffa500;
 }
 .box .self_info .self_job {
   font-size: 28rpx;

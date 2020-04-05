@@ -29,10 +29,9 @@
   </view>
 <van-cell title="姓名" icon="contact" value="李岳辉"/>
 <van-cell title="籍贯" icon="location-o" value="广东怀集" />
-<van-cell title="政治面貌" icon="eye-o" value="中共党员"/>
 <van-cell title="学历" icon="medal-o" value="本科"/>
 <van-cell title="专业" icon="bookmark-o" value="软件工程"/>
-<van-cell title="经验年限" icon="upgrade" value="4年"/>
+<van-cell title="经验年限" icon="upgrade" value="5年"/>
 <van-cell title="邮箱" icon="envelop-o" is-link value="点击复制" bind:click="copyEmail"/>
 <view style="background-color:#fff;">
   <van-divider  dashed customStyle="background-color:#fff;"></van-divider>
